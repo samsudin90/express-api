@@ -17,6 +17,7 @@ app.get('/person', (req, res) => {
 app.get('/person/:id', (req, res) => {
     const i = req.params.id
     const id = parseInt(i)
+    if (id > 10) return res.status(404).json({message : `data with id ${id} not found`})
     const data = Data.find(c => c.id === id)
     console.log(Data)
     res.json({data})
@@ -40,6 +41,7 @@ app.put('/person/:id', (req, res) => {
 
 app.patch('/person/:id', (req, res) => {
     const id = parseInt(req.params.id)
+    if (id > 10) return res.sendStatus(404).json({message : `data with id ${id} not found`})
     const dat = req.body
     const DataCopy = JSON.parse(JSON.stringify(Data))
     const data = DataCopy.find(c => c.id === id)

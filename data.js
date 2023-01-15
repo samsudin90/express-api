@@ -28,5 +28,35 @@ export const Data = [
         "name" : "Nida",
         "profession" : "teacher",
         "gender" : "female"
+    },
+    {
+        "id" : 6,
+        "name" : "Tedy",
+        "profession" : "designer",
+        "gender" : "male"
+    },
+    {
+        "id" : 7,
+        "name" : "Nidya",
+        "profession" : "influencer",
+        "gender" : "female"
+    },
+    {
+        "id" : 8,
+        "name" : "Karen",
+        "profession" : "teacher",
+        "gender" : "female"
+    },
+    {
+        "id" : 9,
+        "name" : "Mark Kilabuk",
+        "profession" : "programmer",
+        "gender" : "male"
+    },
+    {
+        "id" : 10,
+        "name" : "Reze Mahesa",
+        "profession" : "pilot",
+        "gender" : "male"
     }
 ]
