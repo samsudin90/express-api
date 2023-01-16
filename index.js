@@ -6,7 +6,7 @@ app.use(express.json())
 
 app.get('/', (req, res) => {
     res.json({
-        data : "this is an api using express js"
+        data : "this is an simply api using express js"
     })
 })
 
