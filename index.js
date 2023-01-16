@@ -1,13 +1,13 @@
-import express, { json } from "express"
+import express from "express"
 import { Data } from "./data.js"
+import path from "path"
 
+const __dirname = path.resolve()
 const app = express()
 app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.json({
-        data : "this is an simply api using express js"
-    })
+    res.sendFile(path.join(__dirname, 'index.html'))
 })
 
 app.get('/person', (req, res) => {
@@ -20,7 +20,7 @@ app.get('/person/:id', (req, res) => {
     if (id > 10) return res.status(404).json({message : `data with id ${id} not found`})
     const data = Data.find(c => c.id === id)
     console.log(Data)
-    res.json({data})
+    res.json(data)
 })
 
 app.post('/person', (req, res) => {

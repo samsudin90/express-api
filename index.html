@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="w-full h-screen mx-2 md:mx-auto mt-8 max-w-[1240px]">
+        <h1 class="text-3xl font-bold uppercase text-center">free api</h1>
+        <p class="text-xl mt-4 text-center">Free fake API for testing and prototyping</p>
+        <p class="text-xl text-center">Powered by <a href="https://expressjs.com/" target="_blank"
+                class="text-blue-400 underline">Express JS</a></p>
+        <h2 class="capitalize mt-12 text-2xl font-semibold">try it</h2>
+        <p class="mt-2 ">Copy and run this code</p>
+        <div class="w-full mt-4 bg-black/80 rounded-lg">
+            <p class="p-2 text-lg"><span class="text-yellow-500 tracking-wider">fetch</span><span
+                    class="text-white">(</span><span
+                    class="text-green-500">'https://express-api-samsudin90.vercel.app/person/1'</span><span
+                    class="text-white">)</span><span class="text-white">.</span><span class="text-yellow-500">then</span><span class="text-white">(</span><span
+                    class="text-white">response</span><span class="text-blue-500">
+                    =></span><span class="text-white"> response.</span><span class="text-yellow-500">json</span><span
+                    class="text-white">())</span><span class="text-yellow-500">then</span><span class="text-white">(</span><span
+                    class="text-white">json</span><span class="text-blue-500"> =>
+                </span><span class="text-white">console</span><span class="text-white">.</span><span
+                    class="text-yellow-500">log</span><span class="text-white">(json))</span></p>
+        </div>
+        <p class="mt-8 ">And here the result</p>
+        <div class="w-full mt-4 bg-black/80 rounded-lg p-2 text-lg tracking-wider">
+            <p class="text-white">{</p>
+            <p class="pl-6 text-green-500">"id"<span class="text-blue-500"> : </span><span class="text-yellow-500">1</span><span class="text-white">,</span></p>
+            <p class="pl-6 text-green-500">"name"<span class="text-blue-500"> : </span>"John Mayer"<span class="text-white">,</span></p>
+            <p class="pl-6 text-green-500">"profession"<span class="text-blue-500"> : </span>"singer"<span class="text-white">,</span></p>
+            <p class="pl-6 text-green-500">"gender"<span class="text-blue-500"> : </span>"male"</p>
+            <p class="text-white">}</p>
+        </div>
+        <h2 class="capitalize mt-12 text-2xl font-semibold">Resources</h2>
+        <p class="mt-2 ">For now is only 1 resource</p>
+        <p class="text-lg  mt-3 pl-6"><a href="https://express-api-samsudin90.vercel.app/person" target="_blank" class="text-blue-400">/person</a><span class="pl-6"> 10 persons</span></p>
+        <h2 class="capitalize mt-12 text-2xl font-semibold">Routes</h2>
+        <p class="my-2 ">All HTTP methods are supported for your requests.</p>
+        <p class="pl-6 text-lg">GET <a href="https://express-api-samsudin90.vercel.app/person" target="_blank" class="text-blue-400 pl-6">/person</a></p>
+        <p class="pl-6 text-lg">GET <a href="https://express-api-samsudin90.vercel.app/person/1" target="_blank" class="text-blue-400 pl-6">/person/1</a></p>
+        <div class="pl-6 text-lg">POST <span class="pl-6">/person</span></div>
+        <div class="pl-6 text-lg">PUT <span class="pl-6">/person/1</span></div>
+        <div class="pl-6 text-lg">PATCH <span class="pl-6">/person/1</span></div>
+        <div class="pl-6 text-lg">DELETE <span class="pl-6">/person/1</span></div>
+        <br>
+        <br>
+        <br>
+        <p class="pb-8 text-center">code with ❤️ by <a href="https://github.com/samsudin90" target="_blank" class="text-blue-400">samsudin</a> © 2023</p>
+        <br>
+        <br>
+    </div>
+</body>
+
+</html>
